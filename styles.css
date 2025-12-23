@@ -489,7 +489,6 @@ div[id*="meter"] div {
 
 .soft-panel {
   background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(6px);
   border-radius: 999px;
   box-shadow:
     0 12px 30px rgba(95, 103, 152, 0.18);
@@ -499,16 +498,13 @@ div[id*="meter"] div {
   padding: 36px 48px !important;
   border-radius: 999px !important;
   background: rgba(255, 255, 255, 0.75) !important;
-  backdrop-filter: blur(6px);
   box-shadow:
     0 12px 30px rgba(95, 103, 152, 0.18);
 }
 .container-fluid.fs-goal {
-  margin-top: -28px; /* pulls it closer to hero */
   padding: 28px 40px !important;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(6px);
   box-shadow:
     0 12px 30px rgba(95, 103, 152, 0.18);
 }
