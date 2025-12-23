@@ -488,7 +488,6 @@ div[id*="meter"] div {
    =============================== */
 
 .soft-panel {
-  background: rgba(255, 255, 255, 0.75);
   border-radius: 999px;
   box-shadow:
     0 12px 30px rgba(95, 103, 152, 0.18);
@@ -496,13 +495,11 @@ div[id*="meter"] div {
 .fs-countdown,
 .fs-countdowndonate {
   border-radius: 999px !important;
-  background: rgba(255, 255, 255, 0.75) !important;
   box-shadow:
     0 12px 30px rgba(95, 103, 152, 0.18);
 }
 .container-fluid.fs-goal {
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.75);
   box-shadow:
     0 12px 30px rgba(95, 103, 152, 0.18);
 }
