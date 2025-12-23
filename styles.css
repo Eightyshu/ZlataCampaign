@@ -153,23 +153,22 @@ div[id*="meter"] div {
 /* ===============================
    HERO SECTION – FINAL
    =============================== */
-
 .jumbotron.fs-header {
   position: relative;
-  background-image: url('https://eightyshu.github.io/ZlataCampaign/images/hero.jpg'); /* swap image here */
+  background-image: url('https://eightyshu.github.io/ZlataCampaign/images/hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  padding: 140px 40px 120px !important;
+  padding: 90px 28px 80px !important;
 }
 
-/* Soft overlay */
-.jumbotron.fs-header::before
+/* Simple, light overlay */
+.jumbotron.fs-header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.35); /* calm, neutral */
   z-index: 0;
 }
 
@@ -185,7 +184,6 @@ div[id*="meter"] div {
   display: flex;
   align-items: center;
 }
-
 /* ===============================
    HERO TYPOGRAPHY
    =============================== */
