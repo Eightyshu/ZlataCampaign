@@ -70,17 +70,16 @@ textarea {
 .campaign-progress .bar,
 .goal-progress .bar,
 .progress-bar {
-  border-radius: 999px !important;
-  background: #5F6798 !important;
+    background: #5F6798 !important;
 }
-/* Primary buttons */
-a.btn,
-button.btn,
-input.btn,
-a.button,
-button.button,
-input[type="submit"],
-input[type="button"] {
+/* Primary buttons (EXCLUDE progress bar) */
+body a.btn:not(.progress *),
+body button.btn:not(.progress *),
+body input.btn:not(.progress *),
+body a.button:not(.progress *),
+body button.button:not(.progress *),
+body input[type="submit"]:not(.progress *),
+body input[type="button"]:not(.progress *) {
   border-radius: 999px !important;
   padding: 14px 22px !important;
   font-weight: 600 !important;
@@ -93,7 +92,6 @@ input[type="button"] {
     0 0 0 6px rgba(255, 245, 200, 0.45);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 a.btn:hover,
 button.btn:hover,
 input.btn:hover,
@@ -172,11 +170,11 @@ input[type="button"]:hover {
   display:block;
   font-family: 'Poppins', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 22px !important;
+  font-size: 26px !important;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.95) !important;
-  margin-bottom: 6px !important;
+  margin-bottom: 2px !important;
 
   text-shadow:
     0 2px 8px rgba(0,0,0,0.20);
@@ -201,7 +199,7 @@ input[type="button"]:hover {
 
 /* LET’S BUILD IT TOGETHER */
 .fs-header .page-header h1::after{
-  content: "Let’s Build It Together";
+  content: "The Future Needs More Light. Let’s Build It Together";
   display:block;
   margin-top: 14px;
 
@@ -312,4 +310,38 @@ input[type="button"]:hover {
 .fs-header .donate-flex a:last-child{
   background: rgba(255,255,255,0.78) !important;
   color: #2c2f6c !important;
+}
+/* ===============================
+   PROGRESS BAR – COLORS + FONTS ONLY
+   =============================== */
+
+/* Progress bar container */
+.progress,
+.progressbar,
+.thermometer,
+.campaign-progress,
+.goal-progress {
+  background-color: rgba(95, 103, 152, 0.18) !important; /* soft muted */
+  font-family: 'Poppins', sans-serif !important;
+  color: #5F6798 !important;
+}
+
+/* Progress bar fill */
+.progress .progress-bar,
+.progressbar .bar,
+.thermometer .fill,
+.campaign-progress .bar,
+.goal-progress .bar {
+  background-color: #5F6798 !important; /* your brand color */
+}
+
+/* Progress bar text (amounts, percentages) */
+.progress span,
+.progressbar span,
+.thermometer span,
+.campaign-progress span,
+.goal-progress span {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+  color: #5F6798 !important;
 }
