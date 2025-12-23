@@ -495,14 +495,12 @@ div[id*="meter"] div {
 }
 .fs-countdown,
 .fs-countdowndonate {
-  padding: 36px 48px !important;
   border-radius: 999px !important;
   background: rgba(255, 255, 255, 0.75) !important;
   box-shadow:
     0 12px 30px rgba(95, 103, 152, 0.18);
 }
 .container-fluid.fs-goal {
-  padding: 28px 40px !important;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.75);
   box-shadow:
