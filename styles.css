@@ -345,3 +345,30 @@ input[type="button"]:hover {
   font-weight: 600 !important;
   color: #5F6798 !important;
 }
+/* ===============================
+   FORCE PROGRESS BAR COLORS
+   =============================== */
+
+/* track */
+.progress,
+.progressbar,
+.thermometer,
+.campaign-progress,
+.goal-progress,
+.progress {
+  background-color: rgba(95, 103, 152, 0.12) !important;
+}
+
+/* fill – hit lots of common structures, but only inside progress containers */
+.progress .progress-bar,
+.progressbar .bar,
+.progressbar .fill,
+.thermometer .fill,
+.thermometer .bar,
+.campaign-progress .bar,
+.goal-progress .bar,
+.progress [style*="width"] {
+  background-color: #5F6798 !important;
+  background: #5F6798 !important;
+  background-image: none !important;
+}
