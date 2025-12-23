@@ -356,3 +356,7 @@ div[id*="meter"] div {
   background: #737eaa !important;
   border-radius: 999px !important;
 }
+.jumbotron.fs-header {
+  padding: 60px 0 !important;
+  border-radius: 0 !important;
+}
