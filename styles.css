@@ -345,3 +345,28 @@ input[type="button"]:hover {
   font-weight: 600 !important;
   color: #5F6798 !important;
 }
+/* ===============================
+   GOAL / PROGRESS BAR COLORS (targeted)
+   =============================== */
+
+/* Track (the empty bar) */
+.fs-goal .fs-goal-graph-container .progress,
+.fs-goal .fs-goal-graph-container .progressbar,
+.fs-goal .fs-goal-graph-container [class*="progress"],
+.fs-goal .fs-goal-graph-container [class*="thermo"],
+.fs-goal .fs-goal-graph-container [class*="meter"],
+.fs-goal .fs-goal-graph-container [class*="goal"] {
+  background-color: rgba(95, 103, 152, 0.18) !important;
+  border-radius: 999px !important;
+  overflow: hidden !important;
+}
+
+/* Fill (the raised amount) */
+.fs-goal .fs-goal-graph-container .progress-bar,
+.fs-goal .fs-goal-graph-container [class*="progress"] .progress-bar,
+.fs-goal .fs-goal-graph-container [class*="progress"] [class*="bar"],
+.fs-goal .fs-goal-graph-container [class*="thermo"] [class*="fill"],
+.fs-goal .fs-goal-graph-container [style*="width"] {
+  background-color: #5F6798 !important;
+  border-radius: 999px !important;
+}
