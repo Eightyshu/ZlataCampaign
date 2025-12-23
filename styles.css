@@ -201,6 +201,26 @@ input[type="button"]:hover {
   .fs-header .page-header h1 small{ font-size: 16px !important; }
 }
 /* ===============================
+   Hero subheadline glow
+   =============================== */
+
+.fs-header .page-header small {
+  display: block;
+  margin-top: 14px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  color: #fffaf2; /* warm off-white */
+
+  text-shadow:
+    0 0 6px rgba(255, 245, 200, 0.55),
+    0 0 14px rgba(255, 230, 160, 0.35);
+}
+
+/* ===============================
    HERO BUTTONS
    =============================== */
 
