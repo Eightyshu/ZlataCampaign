@@ -202,4 +202,68 @@ div[id*="meter"] div {
   /* very subtle warmth, not glow-y */
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
+/* ===============================
+   HERO TEXT SIZING
+   =============================== */
+
+/* Make the main hero title (Zlata’s) bigger */
+.fs-header .page-header h1{
+  font-family: 'Poppins', Arial, sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 64px !important;     /* increase/decrease as needed */
+  line-height: 1.05 !important;
+  margin-bottom: 18px !important;
+}
+
+/* If you have a second line under the H1 (Build Our Light),
+   this targets common subtitle patterns. One of these will hit. */
+.fs-header .page-header h2,
+.fs-header .page-header .subtitle,
+.fs-header .page-header .sub-title,
+.fs-header .page-header p{
+  font-family: 'Poppins', Arial, sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 30px !important;
+  line-height: 1.2 !important;
+  margin-top: 0 !important;
+}
+
+/* Mobile sizing */
+@media (max-width: 768px){
+  .fs-header .page-header h1{ font-size: 42px !important; }
+  .fs-header .page-header h2,
+  .fs-header .page-header .subtitle,
+  .fs-header .page-header .sub-title,
+  .fs-header .page-header p{ font-size: 22px !important; }
+}
+
+/* ===============================
+   HERO BUTTONS (Donate / About)
+   =============================== */
+
+/* Target the two hero buttons area */
+.fs-header .donate-flex a,
+.fs-header .donate-flex button,
+.fs-header .donate-flex .btn{
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;   /* centers the words */
+  text-align: center !important;
+
+  font-family: 'Poppins', Arial, sans-serif !important;
+  font-weight: 700 !important;          /* bolder */
+  letter-spacing: 0.2px;
+
+  border-radius: 999px !important;      /* fully rounded */
+  padding: 14px 22px !important;
+  min-height: 48px;
+
+  line-height: 1 !important;
+}
+
+/* If the button has an inner span/div that’s messing alignment */
+.fs-header .donate-flex a *,
+.fs-header .donate-flex button *{
+  line-height: 1 !important;
+}
 
