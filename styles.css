@@ -112,9 +112,7 @@ input[type="button"]:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  padding: 90px 28px 80px !important;
-}
+ }
 
 /* Simple, light overlay */
 .jumbotron.fs-header::before {
