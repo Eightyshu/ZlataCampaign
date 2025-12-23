@@ -298,13 +298,13 @@ input[type="button"]:hover {
 
 .container-fluid.fs-goal .progress-bar,
 .container-fluid.fs-goal div[class*="progress"] div {
-  background-color: #5F6798 !important;
+  background-color: #efecec!important;
 }
 /* Goal heading */
 .fs-goal .fs-goal-text {
   font-family: 'Poppins', sans-serif !important;
   font-weight: 600;
-  color: #737eaa;
+  color: #efecec;
 }
 
 /* Dollar amounts + percentages */
@@ -312,7 +312,7 @@ input[type="button"]:hover {
 .fs-goal strong {
   font-family: 'Bowlby One SC', cursive !important;
   letter-spacing: 0.02em;
-   color: #737eaa;
+   color: #efecec;
 }
 /* ===============================
    Progress bar (strong catch-all)
@@ -355,6 +355,6 @@ div[id*="meter"] div {
 /* Common bootstrap-style fill */
 .progress-bar,
 .progress .progress-bar {
-  background: #5F6798 !important;
+  background: #efecec !important;
   border-radius: 999px !important;
 }
