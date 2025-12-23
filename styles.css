@@ -114,20 +114,7 @@ input[type="button"]:hover {
   background-repeat: no-repeat;
  }
 
-/* Simple, light overlay */
-.jumbotron.fs-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.35); /* calm, neutral */
-  z-index: 0;
-}
 
-/* Keep content above overlay */
-.jumbotron.fs-header .container {
-  position: relative;
-  z-index: 1;
-}
 /* HERO HEIGHT CONTROL */
 .jumbotron.fs-header {
   min-height: 520px;
