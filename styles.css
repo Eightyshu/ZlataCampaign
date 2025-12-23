@@ -202,7 +202,7 @@ div[id*="meter"] div {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.95) !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 6px !important;
 
   text-shadow:
     0 2px 8px rgba(0,0,0,0.20);
