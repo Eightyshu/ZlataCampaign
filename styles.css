@@ -137,25 +137,25 @@ div[id*="meter"] div {
   border-radius: 999px !important;
 }
 /* ===============================
-   HERO SECTION
+   HERO SECTION – FINAL
    =============================== */
 
 .jumbotron.fs-header {
   position: relative;
-  background-image: url('https://eightyshu.github.io/ZlataCampaign/images/hero.jpg');
+  background-image: url('https://eightyshu.github.io/ZlataCampaign/images/hero.jpg'); /* swap image here */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  padding: 100px 20px 80px !important;
+  padding: 140px 40px 120px !important;
 }
 
-/* Soft overlay for readability */
+/* Soft overlay */
 .jumbotron.fs-header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.45);
   z-index: 0;
 }
 
@@ -164,106 +164,36 @@ div[id*="meter"] div {
   position: relative;
   z-index: 1;
 }
+
 /* ===============================
    HERO TEXT
    =============================== */
 
-/* Layout: left aligned, vertically centered */
 .fs-header .page-header {
-  text-align: left !important;
+  text-align: left;
   max-width: 640px;
-  margin-left: 0;
-  margin-right: auto;
 }
 
-/* Main headline */
+/* ZLATA’S LITTLE LIGHTS */
+.fs-header .page-header h1 small,
+.fs-header .page-header small {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff; /* FIXES WRONG COLOR */
+  margin-bottom: 14px;
+}
+
+/* BUILD OUR LIGHT */
 .fs-header .page-header h1 {
-  font-family: 'Poppins', Arial, sans-serif !important;
-  font-weight: 700 !important; /* SemiBold = 600, Bold = 700 */
-  text-transform: uppercase !important;
-  font-size: 48px !important;
-  line-height: 1.15 !important;
-  color: rgba(255, 255, 255, 0.95) !important;
-
-  margin-bottom: 18px !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 36px;
 }
-
-/* Subheadline: Let’s Build It Together */
-.fs-header .page-header h2,
-.fs-header .page-header .subheadline {
-  font-family: 'Luckiest Guy', cursive !important;
-  font-size: 26px !important;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.95);
-
-  letter-spacing: 1px;
-  text-transform: none;
-
-  /* very subtle warmth, not glow-y */
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-}
-/* ===============================
-   HERO TEXT SIZING
-   =============================== */
-
-/* Make the main hero title (Zlata’s) bigger */
-.fs-header .page-header h1{
-  font-family: 'Poppins', Arial, sans-serif !important;
-  font-weight: 700 !important;
-  font-size: 64px !important;     /* increase/decrease as needed */
-  line-height: 1.05 !important;
-  margin-bottom: 18px !important;
-}
-
-/* If you have a second line under the H1 (Build Our Light),
-   this targets common subtitle patterns. One of these will hit. */
-.fs-header .page-header h2,
-.fs-header .page-header .subtitle,
-.fs-header .page-header .sub-title,
-.fs-header .page-header p{
-  font-family: 'Poppins', Arial, sans-serif !important;
-  font-weight: 600 !important;
-  font-size: 30px !important;
-  line-height: 1.2 !important;
-  margin-top: 0 !important;
-}
-
-/* Mobile sizing */
-@media (max-width: 768px){
-  .fs-header .page-header h1{ font-size: 42px !important; }
-  .fs-header .page-header h2,
-  .fs-header .page-header .subtitle,
-  .fs-header .page-header .sub-title,
-  .fs-header .page-header p{ font-size: 22px !important; }
-}
-
-/* ===============================
-   HERO BUTTONS (Donate / About)
-   =============================== */
-
-/* Target the two hero buttons area */
-.fs-header .donate-flex a,
-.fs-header .donate-flex button,
-.fs-header .donate-flex .btn{
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;   /* centers the words */
-  text-align: center !important;
-
-  font-family: 'Poppins', Arial, sans-serif !important;
-  font-weight: 700 !important;          /* bolder */
-  letter-spacing: 0.2px;
-
-  border-radius: 999px !important;      /* fully rounded */
-  padding: 14px 22px !important;
-  min-height: 48px;
-
-  line-height: 1 !important;
-}
-
-/* If the button has an inner span/div that’s messing alignment */
-.fs-header .donate-flex a *,
-.fs-header .donate-flex button *{
-  line-height: 1 !important;
-}
-
