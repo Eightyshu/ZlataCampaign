@@ -53,25 +53,6 @@ textarea {
     0 0 0 1px rgba(95, 103, 152, 0.12);
   transform: translateY(-2px);
 }
-/* Progress bar (common ChabadOne selectors) */
-.progress,
-.progressbar,
-.thermometer,
-.campaign-progress,
-.goal-progress {
-  border-radius: 999px !important;
-  overflow: hidden;
-  background: rgba(95, 103, 152, 0.12) !important;
-}
-
-.progress .progress-bar,
-.progressbar .bar,
-.thermometer .fill,
-.campaign-progress .bar,
-.goal-progress .bar,
-.progress-bar {
-    background: #5F6798 !important;
-}
 /* Primary buttons (EXCLUDE progress bar) */
 body a.btn:not(.progress *),
 body button.btn:not(.progress *),
@@ -348,7 +329,7 @@ div[id*="goal"],
 div[id*="meter"] {
   border-radius: 999px !important;
   overflow: hidden !important;
-  background: rgba(95, 103, 152, 0.12) !important;
+  background: #efecec !important;
 }
 
 /* The filled portion */
