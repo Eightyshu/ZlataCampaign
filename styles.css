@@ -310,7 +310,7 @@ input[type="button"]:hover {
 /* Dollar amounts + percentages */
 .fs-goal span,
 .fs-goal strong {
-  font-family: 'Bowlby One SC', cursive !important;
+  font-family: 'Poppins', sans-serif !important;
   letter-spacing: 0.02em;
    color: #efecec;
 }
