@@ -413,3 +413,28 @@ input[type="button"]:hover {
 .fs-goal [class*="progress"] [style*="width"] {
   height: 100% !important;
 }
+/* ===============================
+   GOAL TEXT TYPOGRAPHY
+   =============================== */
+
+/* GOAL label */
+.fs-goal .fs-goal-text,
+.fs-goal .fs-goal-text span,
+.fs-goal .fs-goal-text small {
+  font-family: 'Poppins', sans-serif !important;
+  letter-spacing: 0.02em;
+}
+
+/* Dollar amounts + numbers */
+.fs-goal .fs-goal-text strong,
+.fs-goal .fs-goal-text b,
+.fs-goal .fs-goal-text h1,
+.fs-goal .fs-goal-text h2,
+.fs-goal .fs-goal-text h3,
+.fs-goal .fs-goal-text .amount,
+.fs-goal .fs-goal-text [class*="amount"],
+.fs-goal .fs-goal-text [class*="total"],
+.fs-goal .fs-goal-text [class*="raised"] {
+  font-family: 'Bowlby One', cursive !important;
+  letter-spacing: 0.04em;
+}
