@@ -2,6 +2,19 @@
    FONT IMPORTS
    =============================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap');
+/* ===============================
+   GLOBAL TYPOGRAPHY
+   =============================== */
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #2f3558;
+}
 
 /* ===============================
    Zlata’s Little Lights Campaign
@@ -168,38 +181,38 @@ div[id*="meter"] div {
   position: relative;
   z-index: 1;
 }
-
-/* ===============================
-   HERO TEXT
-   =============================== */
-
-.fs-header .page-header {
-  text-align: left;
-  max-width: 640px;
+/* HERO HEIGHT CONTROL */
+.jumbotron.fs-header {
+  min-height: 520px;
+  max-height: 640px;
+  display: flex;
+  align-items: center;
 }
 
+/* ===============================
+   HERO TYPOGRAPHY
+   =============================== */
+
 /* ZLATA’S LITTLE LIGHTS */
-.fs-header .page-header h1 small,
-.fs-header .page-header small {
-  display: block;
+.fs-header .page-header h1 small {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #ffffff; /* FIXES WRONG COLOR */
-  margin-bottom: 14px;
+  font-size: 14px;
+  color: #f4e6b0; /* warm soft gold */
+  display: block;
+  margin-bottom: 12px;
 }
 
 /* BUILD OUR LIGHT */
 .fs-header .page-header h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 64px;
-  font-weight: 800;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 58px;
   line-height: 1.05;
-  text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 36px;
+  text-transform: uppercase;
+  margin: 0;
 }
 /* ===============================
    HERO BUTTONS
@@ -248,4 +261,22 @@ div[id*="meter"] div {
 .fs-header .donate-flex a:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+/* ===============================
+   HERO BUTTONS
+   =============================== */
+
+.fs-header .btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 14px 32px;
+  text-align: center;
+}
+
+.fs-header .btn-primary,
+.fs-header .btn-default {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
