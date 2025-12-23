@@ -323,7 +323,7 @@ input[type="button"]:hover {
 .fs-goal .fs-goal-text {
   font-family: 'Poppins', sans-serif !important;
   font-weight: 600;
-  color: #5F6798;
+  color: #737eaa;
 }
 
 /* Dollar amounts + percentages */
@@ -331,6 +331,7 @@ input[type="button"]:hover {
 .fs-goal strong {
   font-family: 'Bowlby One SC', cursive !important;
   letter-spacing: 0.02em;
+   color: #737eaa;
 }
 /* ===============================
    Progress bar (strong catch-all)
