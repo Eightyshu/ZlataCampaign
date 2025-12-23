@@ -1,2 +1,18 @@
-/* TEST: if this loads anywhere, it’s working */
-body { outline: 6px solid red !important; }
+/* ===============================
+   Zlata’s Little Lights Campaign
+   Custom CSS
+   =============================== */
+
+/* Reset test styles */
+body {
+  outline: none !important;
+}
+
+/* Global font */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Poppins', Arial, sans-serif;
+}
