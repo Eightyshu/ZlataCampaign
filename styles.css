@@ -188,17 +188,18 @@ div[id*="meter"] div {
   margin-bottom: 18px !important;
 }
 
-/* Subheadline (Let’s Build It Together) */
+/* Subheadline: Let’s Build It Together */
 .fs-header .page-header h2,
 .fs-header .page-header .subheadline {
-  font-family: 'Baloo 2', cursive;
-  font-size: 28px;
-  font-weight: 500;
+  font-family: 'Luckiest Guy', cursive !important;
+  font-size: 26px !important;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.95);
 
+  letter-spacing: 1px;
   text-transform: none;
-  letter-spacing: 0.5px;
 
-  /* subtle glow */
-  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.35);
+  /* very subtle warmth, not glow-y */
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
+
