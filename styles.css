@@ -380,6 +380,22 @@ div[id*="meter"] div {
   border-radius: 0 !important;
 }
 /* ===============================
+   Progress Section Background Image
+   =============================== */
+
+.container-fluid.fs-goal {
+  position: relative;
+  background-image: url("https://eightyshu.github.io/ZlataCampaign/images/progress-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 999px;
+  padding: 36px 48px !important;
+  margin: 24px auto;
+}
+
+/* ===============================
    COUNTDOWN SECTION (Pre-campaign)
    =============================== */
 
