@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 /* ===============================
    Zlata’s Little Lights Campaign
    Custom CSS
@@ -37,4 +38,57 @@ textarea {
     0 4px 14px rgba(95, 103, 152, 0.22),
     0 0 0 1px rgba(95, 103, 152, 0.12);
   transform: translateY(-2px);
+}
+/* Progress bar (common ChabadOne selectors) */
+.progress,
+.progressbar,
+.thermometer,
+.campaign-progress,
+.goal-progress {
+  border-radius: 999px !important;
+  overflow: hidden;
+  background: rgba(95, 103, 152, 0.12) !important;
+}
+
+.progress .progress-bar,
+.progressbar .bar,
+.thermometer .fill,
+.campaign-progress .bar,
+.goal-progress .bar,
+.progress-bar {
+  border-radius: 999px !important;
+  background: #5F6798 !important;
+}
+/* Primary buttons */
+a.btn,
+button.btn,
+input.btn,
+a.button,
+button.button,
+input[type="submit"],
+input[type="button"] {
+  border-radius: 999px !important;
+  padding: 14px 22px !important;
+  font-weight: 600 !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  color: #5F6798 !important;
+  border: 1px solid rgba(95, 103, 152, 0.20) !important;
+
+  box-shadow:
+    0 10px 24px rgba(95, 103, 152, 0.18),
+    0 0 0 6px rgba(255, 245, 200, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a.btn:hover,
+button.btn:hover,
+input.btn:hover,
+a.button:hover,
+button.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 14px 30px rgba(95, 103, 152, 0.24),
+    0 0 0 7px rgba(255, 245, 200, 0.55);
 }
