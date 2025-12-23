@@ -332,3 +332,47 @@ input[type="button"]:hover {
   font-family: 'Bowlby One SC', cursive !important;
   letter-spacing: 0.02em;
 }
+/* ===============================
+   Progress bar (strong catch-all)
+   =============================== */
+
+/* The outer track */
+div[class*="progress"],
+div[class*="thermo"],
+div[class*="goal"],
+div[class*="meter"],
+div[id*="progress"],
+div[id*="thermo"],
+div[id*="goal"],
+div[id*="meter"] {
+  border-radius: 999px !important;
+  overflow: hidden !important;
+  background: rgba(95, 103, 152, 0.12) !important;
+}
+
+/* The filled portion */
+div[class*="progress"] span,
+div[class*="progress"] div,
+div[class*="thermo"] span,
+div[class*="thermo"] div,
+div[class*="goal"] span,
+div[class*="goal"] div,
+div[class*="meter"] span,
+div[class*="meter"] div,
+div[id*="progress"] span,
+div[id*="progress"] div,
+div[id*="thermo"] span,
+div[id*="thermo"] div,
+div[id*="goal"] span,
+div[id*="goal"] div,
+div[id*="meter"] span,
+div[id*="meter"] div {
+  border-radius: 999px !important;
+}
+
+/* Common bootstrap-style fill */
+.progress-bar,
+.progress .progress-bar {
+  background: #5F6798 !important;
+  border-radius: 999px !important;
+}
