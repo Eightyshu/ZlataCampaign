@@ -136,3 +136,69 @@ div[id*="meter"] div {
   background: #5F6798 !important;
   border-radius: 999px !important;
 }
+/* ===============================
+   HERO SECTION
+   =============================== */
+
+.jumbotron.fs-header {
+  position: relative;
+  background-image: url('https://eightyshu.github.io/ZlataCampaign/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 100px 20px 80px !important;
+}
+
+/* Soft overlay for readability */
+.jumbotron.fs-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.55);
+  z-index: 0;
+}
+
+/* Keep content above overlay */
+.jumbotron.fs-header .container {
+  position: relative;
+  z-index: 1;
+}
+/* ===============================
+   HERO TEXT
+   =============================== */
+
+/* Layout: left aligned, vertically centered */
+.fs-header .page-header {
+  text-align: left !important;
+  max-width: 640px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Main headline */
+.fs-header .page-header h1 {
+  font-family: 'Poppins', Arial, sans-serif !important;
+  font-weight: 700 !important; /* SemiBold = 600, Bold = 700 */
+  text-transform: uppercase !important;
+  font-size: 48px !important;
+  line-height: 1.15 !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+
+  margin-bottom: 18px !important;
+}
+
+/* Subheadline (Let’s Build It Together) */
+.fs-header .page-header h2,
+.fs-header .page-header .subheadline {
+  font-family: 'Baloo 2', cursive;
+  font-size: 28px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+
+  text-transform: none;
+  letter-spacing: 0.5px;
+
+  /* subtle glow */
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.35);
+}
