@@ -345,3 +345,37 @@ input[type="button"]:hover {
   font-weight: 600 !important;
   color: #5F6798 !important;
 }
+/* ===============================
+   GOAL / PROGRESS BAR (scoped + safe)
+   =============================== */
+
+/* Scope everything to the goal section only */
+.fs-goal .progress,
+.fs-goal .progressbar,
+.fs-goal .thermometer,
+.fs-goal .campaign-progress,
+.fs-goal .goal-progress {
+  border-radius: 999px !important;
+  overflow: hidden !important;
+  background: rgba(95, 103, 152, 0.12) !important;
+}
+
+/* Fill */
+.fs-goal .progress .progress-bar,
+.fs-goal .progress-bar,
+.fs-goal .progressbar .bar,
+.fs-goal .thermometer .fill,
+.fs-goal .campaign-progress .bar,
+.fs-goal .goal-progress .bar {
+  border-radius: 999px !important;
+  background: #5F6798 !important;
+}
+
+/* Optional: set height ONLY in the goal area */
+.fs-goal .progress,
+.fs-goal .progressbar,
+.fs-goal .thermometer,
+.fs-goal .campaign-progress,
+.fs-goal .goal-progress {
+  height: 14px !important;
+}
