@@ -372,3 +372,44 @@ input[type="button"]:hover {
   background: #5F6798 !important;
   background-image: none !important;
 }
+/* ===============================
+   GOAL / PROGRESS BAR (fs-goal)
+   Only affects the progress area under the hero
+   =============================== */
+
+/* Track (the empty bar) */
+.fs-goal .progress,
+.fs-goal .progressbar,
+.fs-goal .thermometer,
+.fs-goal .campaign-progress,
+.fs-goal .goal-progress,
+.fs-goal [class*="progress"] {
+  background-color: rgba(95, 103, 152, 0.12) !important;
+  border-radius: 999px !important;
+  overflow: hidden !important;
+}
+
+/* Fill (the colored part) */
+.fs-goal .progress .progress-bar,
+.fs-goal .progressbar .bar,
+.fs-goal .progressbar .fill,
+.fs-goal .thermometer .fill,
+.fs-goal .thermometer .bar,
+.fs-goal .campaign-progress .bar,
+.fs-goal .goal-progress .bar,
+.fs-goal [class*="progress"] [style*="width"] {
+  background-color: #5F6798 !important;
+  background: #5F6798 !important;
+  background-image: none !important;
+  border-radius: 999px !important;
+}
+
+/* Optional: make it a nicer height */
+.fs-goal .progress,
+.fs-goal [class*="progress"] {
+  height: 14px !important;
+}
+.fs-goal .progress .progress-bar,
+.fs-goal [class*="progress"] [style*="width"] {
+  height: 100% !important;
+}
