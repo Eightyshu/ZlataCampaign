@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Bowlby+One+SC&display=swap');
 /* ===============================
+   FONT FORCE (beats ChabadOne defaults)
+   =============================== */
+
+:root{
+  --zl-ink: #2f3558;
+  --zl-primary: #5F6798;     /* your periwinkle */
+  --zl-primary-2: #737eaa;   /* slightly lighter */
+  --zl-warm: rgba(255,245,200,0.55);
+}
+
+body,
+body *:not(i):not(svg){
+  font-family: 'Poppins', sans-serif !important;
+}
+
+h1, h2, h3, .page-header h1{
+  font-family: 'Bowlby One SC', cursive !important;
+}
+
+body{
+  color: var(--zl-ink) !important;
+}
+
+/* ===============================
    FONTS (KEEP ONE)
    =============================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Bowlby+One+SC&display=swap');
@@ -106,6 +130,68 @@ a.btn, button.btn, input.btn,
 a.button, button.button, input[type="submit"], input[type="button"]{
   border-radius: 999px !important;
   font-weight: 800 !important;
+}
+/* ===============================
+   REPLACE NAVY ACCENTS (ChabadOne primary)
+   =============================== */
+
+/* Buttons / primary UI */
+.btn-primary,
+a.btn-primary,
+button.btn-primary,
+.team-donate-btn,
+.create-team,
+.fs-donate .btn,
+.fs-donate button,
+.fs-donate a.btn,
+.fs-full-donate-form .btn-primary{
+  background: var(--zl-primary) !important;
+  border-color: var(--zl-primary) !important;
+  color: #fff !important;
+}
+
+/* Outlined buttons */
+.btn-outline-primary,
+a.btn-outline-primary{
+  border-color: var(--zl-primary) !important;
+  color: var(--zl-primary) !important;
+}
+
+/* Links and active highlights that default to navy */
+a, a:hover,
+.nav-tabs > li.active > a,
+.nav-tabs > li > a:hover{
+  color: var(--zl-primary) !important;
+}
+/* ===============================
+   DONOR CARD AMOUNT TRIANGLE
+   =============================== */
+
+.donate-members .donates_user .donate-A .donate-triangle{
+  border-right-color: var(--zl-primary) !important;
+}
+.donate-members .donates_user .donate-A{
+  background: var(--zl-primary) !important;
+  color: #fff !important;
+}
+
+/* ===============================
+   DONATION MODAL: Credit Card / DAF tabs
+   =============================== */
+
+.fs-donate .nav-tabs > li.active > a,
+.fs-donate .nav-tabs > li.active > a:hover,
+.fs-donate .nav-tabs > li.active > a:focus{
+  background: var(--zl-primary) !important;
+  border-color: var(--zl-primary) !important;
+  color: #fff !important;
+}
+
+/* The little pointer triangle under the active tab */
+.fs-donate .nav-tabs > li.active > a:after,
+.fs-donate .nav-tabs > li.active > a:before{
+  border-top-color: var(--zl-primary) !important;
+  border-bottom-color: var(--zl-primary) !important;
 }
 
 /* ===============================
@@ -632,6 +718,19 @@ a.btn *, button.btn *, .fs-header .donate-flex a *{
 }
 .fs-donate-amount button:hover {
   background: rgba(95,103,152,.12) !important;
+}
+/* ===============================
+   BUTTON TEXT CENTERING (site-wide)
+   =============================== */
+
+a.btn, button.btn, input.btn,
+.team-donate-btn, .create-team, .btn-primary, .btn{
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1.1 !important;
+  text-align: center !important;
+  white-space: nowrap;
 }
 
 
