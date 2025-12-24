@@ -764,5 +764,85 @@ a.btn, button.btn, input.btn,
   text-align: center !important;
   white-space: nowrap;
 }
+/* ===============================
+   PANEL SYSTEM (make sections match)
+   =============================== */
+:root{
+  --panel-max: 1100px;
+  --panel-radius: 38px; /* less “capsule”, more modern */
+  --panel-shadow: 0 14px 40px rgba(47, 53, 88, 0.16);
+}
 
+/* Countdown panel */
+.fs-pre-campaign .fs-countdown,
+.fs-pre-campaign .fs-countdowndonate{
+  max-width: var(--panel-max) !important;
+  margin: 28px auto !important;
+  border-radius: var(--panel-radius) !important;
+  box-shadow: var(--panel-shadow) !important;
+  overflow: hidden !important;
+}
+
+/* Progress panel (your container-fluid wants to be full width — we constrain it) */
+.container-fluid.fs-goal{
+  max-width: var(--panel-max) !important;
+  margin: 22px auto !important;
+  border-radius: var(--panel-radius) !important;
+  box-shadow: var(--panel-shadow) !important;
+  overflow: hidden !important;
+}
+/* ===============================
+   COUNTDOWN (more integrated)
+   =============================== */
+.fs-pre-campaign .fs-countdown::after,
+.fs-pre-campaign .fs-countdowndonate::after{
+  background: rgba(115, 126, 170, 0.35) !important; /* your lavender tint */
+}
+
+.fs-pre-campaign .fs-countdown{
+  padding: 40px 24px !important; /* less tall */
+}
+/* ===============================
+   BUTTONS (warm, soft, not corporate)
+   =============================== */
+a.btn,
+button.btn,
+input.btn,
+a.button,
+button.button,
+input[type="submit"],
+input[type="button"],
+.create-team,
+.team-donate-btn{
+  border-radius: 999px !important;
+  padding: 12px 22px !important;
+
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700 !important;
+
+  background: linear-gradient(180deg, #ffffff 0%, #f7f2ea 100%) !important;
+  color: #2f3558 !important;
+
+  border: 1px solid rgba(47, 53, 88, 0.18) !important;
+
+  box-shadow:
+    0 10px 22px rgba(47, 53, 88, 0.14),
+    inset 0 1px 0 rgba(255,255,255,0.85) !important;
+}
+
+/* hover */
+a.btn:hover,
+button.btn:hover,
+input.btn:hover,
+a.button:hover,
+button.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.create-team:hover,
+.team-donate-btn:hover{
+  transform: translateY(-1px);
+  box-shadow:
+    0 14px 28px rgba(47, 53, 88, 0.18),
+    inset 0 1px 0 rgba(255,255,255,0.9) !important;
+}
 
