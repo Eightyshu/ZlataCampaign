@@ -255,7 +255,6 @@ body input[type="button"]:not(.progress *) {
 
   box-shadow:
     0 10px 24px rgba(95, 103, 152, 0.18),
-    0 0 0 6px rgba(255, 245, 200, 0.45);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 /* ===============================
@@ -279,6 +278,40 @@ input[type="submit"], input[type="button"]{
   padding: 14px 22px !important;
   border-radius: 999px !important;
 }
+/* BUTTON STYLE A: Soft glass */
+a.btn, button.btn, input.btn,
+a.button, button.button, input[type="submit"], input[type="button"],
+.create-team, .team-donate-btn {
+  border-radius: 999px !important;
+  padding: 14px 22px !important;
+  font-weight: 700 !important;
+
+  background: rgba(255,255,255,0.88) !important;
+  color: #2f3558 !important;
+  border: 1px solid rgba(255,255,255,0.55) !important;
+
+  box-shadow:
+    0 10px 26px rgba(95,103,152,0.18),
+    inset 0 1px 0 rgba(255,255,255,0.65) !important;
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+a.btn, button.btn, .team-donate-btn, .create-team{
+  letter-spacing: 0.02em !important;
+}
+
+a.btn:hover, button.btn:hover, input.btn:hover,
+a.button:hover, button.button:hover, input[type="submit"]:hover, input[type="button"]:hover,
+.create-team:hover, .team-donate-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.94) !important;
+  box-shadow:
+    0 14px 34px rgba(95,103,152,0.22),
+    inset 0 1px 0 rgba(255,255,255,0.72) !important;
+}
 
 a.btn:hover,
 button.btn:hover,
@@ -290,7 +323,6 @@ input[type="button"]:hover {
   transform: translateY(-1px);
   box-shadow:
     0 14px 30px rgba(95, 103, 152, 0.24),
-    0 0 0 7px rgba(255, 245, 200, 0.55);
 }
 /* Progress bar polish */
 .progress,
