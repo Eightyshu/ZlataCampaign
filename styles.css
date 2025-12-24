@@ -481,4 +481,50 @@ input[type="button"]:hover {
   box-shadow:
     0 12px 30px rgba(95, 103, 152, 0.18);
 }
+/* ===============================
+   DONORS SECTION – BACKGROUND
+   =============================== */
+
+section.donar-section {
+  background: #A9D8E8 !important; /* soft sky blue */
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.js-donors-list {
+  background: rgba(119, 130, 176, 0.25);
+}
+/* Tabs container */
+.donors-tabs {
+  background: rgba(119, 130, 176, 0.15);
+  border-radius: 999px;
+  padding: 10px 16px;
+  display: inline-flex;
+  gap: 24px;
+}
+/* Empty donor state */
+.js-donors-list:empty::before {
+  content: "Be the first to light the way";
+  display: block;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.9);
+  color: #5F6798;
+
+  border-radius: 999px;
+  padding: 18px 28px;
+  font-weight: 600;
+}
+/* Individual donor cards – soft palette */
+.donate-members .donates_user {
+  background: rgba(119, 130, 176, 0.18); /* soft periwinkle */
+  border-radius: 20px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+
+  color: #2F3B66;
+  font-family: 'Poppins', sans-serif;
+
+  box-shadow:
+    0 6px 14px rgba(95, 103, 152, 0.12);
+}
 
