@@ -3,16 +3,6 @@
    GLOBAL TYPOGRAPHY
    =============================== */
 
-body,
-button,
-input,
-select,
-textarea {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  color: #2f3558;
-}
-
 /* ===============================
    Zlata’s Little Lights Campaign
    Custom CSS
@@ -73,6 +63,28 @@ body input[type="button"]:not(.progress *) {
     0 0 0 6px rgba(255, 245, 200, 0.45);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+/* ===============================
+   BUTTON FIX – alignment + font
+   =============================== */
+
+a.btn, button.btn, input.btn,
+a.button, button.button,
+input[type="submit"], input[type="button"]{
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  line-height: 1 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700 !important;
+
+  padding: 14px 22px !important;
+  border-radius: 999px !important;
+}
+
 a.btn:hover,
 button.btn:hover,
 input.btn:hover,
@@ -222,55 +234,6 @@ input[type="button"]:hover {
 }
 
 /* ===============================
-   HERO BUTTONS
-   =============================== */
-
-.fs-header .donate-flex {
-  display: flex;
-  gap: 16px;
-  justify-content: flex-start;
-}
-
-/* Both buttons */
-.fs-header .donate-flex a {
-  display: inline-flex;
-  align-items: center;     /* vertical centering */
-  justify-content: center; /* horizontal centering */
-
-  height: 56px;
-  min-width: 200px;
-
-  padding: 0 28px;
-  border-radius: 999px; /* fully rounded */
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-
-  transition: all 0.25s ease;
-}
-
-/* DONATE NOW (primary) */
-.fs-header .donate-flex a:first-child {
-  background: #ffffff;
-  color: #2c2f6c;
-}
-
-/* ABOUT CAMPAIGN (secondary) */
-.fs-header .donate-flex a:last-child {
-  background: rgba(255, 255, 255, 0.85);
-  color: #2c2f6c;
-}
-
-/* Hover */
-.fs-header .donate-flex a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
-/* ===============================
    HERO BUTTONS – CENTERED + PILL
    =============================== */
 
@@ -309,6 +272,12 @@ input[type="button"]:hover {
   background: rgba(255,255,255,0.78) !important;
   color: #2c2f6c !important;
 }
+.fs-header .donate-flex a{
+  width: 220px !important;      /* keeps both buttons consistent */
+  min-height: 54px !important;  /* stable height */
+  line-height: 1 !important;
+}
+
 /* ===============================
    Progress bar (strong catch-all)
    =============================== */
@@ -507,6 +476,11 @@ section.donar-section {
   transform: translateY(-2px);
   box-shadow:
     0 10px 22px rgba(95, 103, 152, 0.22);
+}
+/* Ensure any inner spans inside buttons inherit correctly */
+a.btn *, button.btn *, .fs-header .donate-flex a *{
+  font-family: inherit !important;
+  line-height: inherit !important;
 }
 
 
