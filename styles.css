@@ -591,5 +591,47 @@ a.btn *, button.btn *, .fs-header .donate-flex a *{
   font-family: inherit !important;
   line-height: inherit !important;
 }
+/* ===============================
+   DONATION FORM TYPOGRAPHY FIX
+   =============================== */
+
+/* Section headers */
+.fs-full-donate-form
+.fs-donate-body
+.fs-donate-section h3 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--zl-ink) !important;
+  letter-spacing: 0.01em;
+}
+
+/* Donation amount buttons */
+.fs-donate-amount button,
+.fs-donate-amount .btn,
+.fs-donate-amount a {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* Labels + helper text */
+.fs-full-donate-form label,
+.fs-full-donate-form .checkbox-label,
+.fs-full-donate-form .help-block,
+.fs-full-donate-form p {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 400;
+  color: var(--zl-ink);
+}
+
+/* Inputs */
+.fs-full-donate-form input,
+.fs-full-donate-form select,
+.fs-full-donate-form textarea {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 15px;
+}
+.fs-donate-amount button:hover {
+  background: rgba(95,103,152,.12) !important;
+}
 
 
