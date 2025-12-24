@@ -404,9 +404,6 @@ input[type="button"]:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  border-radius: 999px;
-  padding: 36px 48px !important;
   margin: 24px auto;
 }
 
@@ -746,6 +743,18 @@ input[type="button"]:hover,
 .soft-panel,
 .fs-countdown,
 .fs-countdowndonate{
+  border-radius: 0 !important;
+}
+/* HARD OVERRIDE: remove pill look everywhere it matters */
+.container-fluid.fs-goal,
+.fs-pre-campaign .fs-countdown,
+.fs-pre-campaign .fs-countdowndonate,
+.fs-countdown,
+.fs-countdowndonate,
+.soft-panel,
+.container-fluid.fs-goal *,
+.fs-pre-campaign .fs-countdown *,
+.fs-pre-campaign .fs-countdowndonate *{
   border-radius: 0 !important;
 }
 
