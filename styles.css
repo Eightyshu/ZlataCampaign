@@ -745,3 +745,28 @@ input[type="button"]:hover,
 .fs-countdowndonate{
   border-radius: 0 !important;
 }
+/* REMOVE the light-blue donate panel background */
+.fs-countdowndonate .fs-donate,
+.fs-countdowndonate .fs-donatable{
+  background: transparent !important;
+  background-image: none !important;
+}
+
+/* If the angled blue wedge is still there, kill the pseudo-elements */
+.fs-countdowndonate .fs-donate::before,
+.fs-countdowndonate .fs-donate::after{
+  content: none !important;
+  display: none !important;
+}
+/* Make the donate panel background your darker purple */
+.fs-countdowndonate .fs-donate,
+.fs-countdowndonate .fs-donatable{
+  background: #737eaa !important;
+  background-image: none !important;
+}
+
+/* If the angled wedge/shape is created with pseudo-elements, match it */
+.fs-countdowndonate .fs-donate::before,
+.fs-countdowndonate .fs-donate::after{
+  background: #737eaa !important;
+}
