@@ -679,3 +679,69 @@ input[type="button"]:hover,
     0 14px 28px rgba(47, 53, 88, 0.18),
     inset 0 1px 0 rgba(255,255,255,0.9) !important;
 }
+/* =========================================
+   STRAIGHT BARS: Progress + Countdown
+   Long, full-width, NO rounded corners
+   ========================================= */
+
+/* 1) PROGRESS SECTION CONTAINER: make it long + square */
+.container-fluid.fs-goal{
+  max-width: 1100px !important;     /* keep your panel width */
+  width: 100% !important;
+  margin: 22px auto !important;
+  border-radius: 0 !important;      /* <-- no rounded corners */
+  overflow: hidden !important;
+  box-shadow: 0 14px 40px rgba(47, 53, 88, 0.16) !important; /* optional */
+}
+
+/* If your progress-bg image was also rounded, kill it */
+.container-fluid.fs-goal::before,
+.container-fluid.fs-goal::after{
+  border-radius: 0 !important;
+}
+
+/* 2) PROGRESS BAR TRACK + FILL: square ends */
+.container-fluid.fs-goal .progress,
+.container-fluid.fs-goal .progressbar,
+.container-fluid.fs-goal .thermometer,
+.container-fluid.fs-goal .campaign-progress,
+.container-fluid.fs-goal .goal-progress{
+  border-radius: 0 !important;      /* <-- square ends */
+  overflow: hidden !important;
+}
+
+/* common bootstrap */
+.container-fluid.fs-goal .progress-bar,
+.container-fluid.fs-goal .progress .progress-bar,
+.container-fluid.fs-goal .progressbar .bar,
+.container-fluid.fs-goal .thermometer .fill,
+.container-fluid.fs-goal .campaign-progress .bar,
+.container-fluid.fs-goal .goal-progress .bar{
+  border-radius: 0 !important;      /* <-- square ends */
+}
+
+/* 3) COUNTDOWN TICKER: long + square */
+.fs-pre-campaign .fs-countdown,
+.fs-pre-campaign .fs-countdowndonate{
+  max-width: 1100px !important;
+  width: 100% !important;
+  margin: 28px auto !important;
+  border-radius: 0 !important;      /* <-- no rounded corners */
+  overflow: hidden !important;
+  box-shadow: 0 14px 40px rgba(47, 53, 88, 0.16) !important; /* optional */
+}
+
+/* make the image/overlay layers square too */
+.fs-pre-campaign .fs-countdown::before,
+.fs-pre-campaign .fs-countdown::after,
+.fs-pre-campaign .fs-countdowndonate::before,
+.fs-pre-campaign .fs-countdowndonate::after{
+  border-radius: 0 !important;
+}
+
+/* 4) IMPORTANT: stop any old “pill panel” rules from re-rounding these */
+.soft-panel,
+.fs-countdown,
+.fs-countdowndonate{
+  border-radius: 0 !important;
+}
