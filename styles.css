@@ -1,5 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Bowlby+One+SC&display=swap');
 /* ===============================
+   FONTS (KEEP ONE)
+   =============================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Bowlby+One+SC&display=swap');
+
+/* ===============================
+   BRAND COLORS (edit here only)
+   =============================== */
+:root{
+  --zl-primary: #5F6798;      /* your purple */
+  --zl-primary-2: #737eaa;    /* softer purple */
+  --zl-ink: #2f3558;          /* text */
+  --zl-cream: #fffaf2;        /* warm off-white */
+  --zl-glow: rgba(255,245,200,.55);
+}
+
+/* Global typography */
+body, button, input, select, textarea{
+  font-family: 'Poppins', sans-serif !important;
+  color: var(--zl-ink);
+}
+
+/* ===============================
+   REPLACE NAVY ACCENTS (ChabadOne)
+   =============================== */
+
+/* Primary navy buttons (Create a Team / other system buttons) */
+.team-donate-btn,
+.create-team,
+.create-team-btn,
+.js-create-team,
+.btn.btn-primary,
+a.btn-primary,
+button.btn-primary,
+input.btn-primary{
+  background: var(--zl-primary) !important;
+  border-color: var(--zl-primary) !important;
+  color: #fff !important;
+}
+
+/* Hover state */
+.team-donate-btn:hover,
+.create-team:hover,
+.create-team-btn:hover,
+.js-create-team:hover,
+.btn.btn-primary:hover,
+a.btn-primary:hover,
+button.btn-primary:hover,
+input.btn-primary:hover{
+  background: var(--zl-primary-2) !important;
+  border-color: var(--zl-primary-2) !important;
+}
+
+/* Any “navy” text links */
+a, a:visited{
+  color: var(--zl-primary) !important;
+}
+a:hover{
+  color: var(--zl-primary-2) !important;
+}
+
+/* Tabs (DONORS / TEAMS / ABOUT) – underline + active color */
+.donors-tabs a,
+.donors-tabs .tab,
+.nav-tabs > li > a{
+  color: var(--zl-primary) !important;
+  font-weight: 700 !important;
+}
+
+.donors-tabs a.active,
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+  color: var(--zl-primary) !important;
+  border-color: transparent !important;
+  background: transparent !important;
+  box-shadow: inset 0 -3px 0 0 var(--zl-primary) !important; /* underline */
+}
+
+/* Little navy amount badge on donor card (your inspect shows .donate-A) */
+.donate-members .donate-A,
+.donate-members .donate-A *{
+  background: var(--zl-primary) !important;
+  color: #fff !important;
+}
+
+/* Donation modal “Credit Card / DAF” selected tab + other navy fills */
+.fs-donate-body .nav-tabs > li.active > a,
+.fs-donate-body .nav-tabs > li.active > a:hover,
+.fs-donate-body .nav-tabs > li.active > a:focus{
+  background: var(--zl-primary) !important;
+  color: #fff !important;
+  border-color: var(--zl-primary) !important;
+}
+
+/* Form focus outline (kills the default blue) */
+input:focus, select:focus, textarea:focus{
+  border-color: var(--zl-primary-2) !important;
+  box-shadow: 0 0 0 4px rgba(95,103,152,.18) !important;
+  outline: none !important;
+}
+
+/* Optional: make “pill buttons” consistent everywhere */
+a.btn, button.btn, input.btn,
+a.button, button.button, input[type="submit"], input[type="button"]{
+  border-radius: 999px !important;
+  font-weight: 800 !important;
+}
+
+/* ===============================
    GLOBAL TYPOGRAPHY
    =============================== */
 
