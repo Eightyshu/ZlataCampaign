@@ -493,5 +493,14 @@ section.donar-section {
 
   padding: 80px 0 100px;
 }
+/* Donor cards on banner */
+.donate-members .donates_user {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  padding: 14px 18px;
+
+  box-shadow:
+    0 6px 16px rgba(95, 103, 152, 0.15);
+}
 
 
